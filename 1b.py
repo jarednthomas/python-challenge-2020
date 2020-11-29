@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
-
+# removeprefix and removesuffix are part of python 3.9
 url = "http://www.pythonchallenge.com/pc/def/map.html"
-current_page = url[(len(url) - 8):(len(url) - 5)]
+current_page = url.removeprefix("http://www.pythonchallenge.com/pc/def/")
+current_page = current_page.removesuffix(".html")
 
 a = "abcdefghijklmnopqrstuvwzyz"
 k = "cdefghijklmnopqrstuvwzyzab"
